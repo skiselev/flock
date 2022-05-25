@@ -155,15 +155,15 @@ J3-39 | USR3        | User Pin 3; Not connected               |       |         
 
 #### Version 1.0
 
-[Flock project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=xxxxxxxxxx) - View and order all components except of the FDC and the PCB.
+[Flock project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=5b60f70b94) - View and order all components except of the FDC and the PCB.
 
-[Flock project on OSH Park](https://oshpark.com/shared_projects/xxxxxxx) - View and order the PCB.
+[Flock project on OSH Park](https://oshpark.com/shared_projects/BpUjKD43) - View and order the PCB.
 
-Flock project on Tindie: [Complete kit](https://www.tindie.com/products/weird/flock-rc2014-compatible-module-kit/); [Flock PCB and an FDC](https://www.tindie.com/products/weird/flock-rc2014-compatible-module-pcb-and-fdc/).
+Flock project on Tindie: [Complete kit](https://www.tindie.com/products/weird/flock-rc2014-compatible-module-kit/); [Flock PCB and FDC](https://www.tindie.com/products/weird/flock-rc2014-compatible-module-pcb-and-fdc/).
 
 Component type     | Reference | Description                                 | Quantity | Possible sources and notes 
 ------------------ | --------- | ------------------------------------------- | -------- | --------------------------
-PCB                |           | Flock PCB - Version 1.0                     | 1        | Buy from my Tindie store: [Complete kit](https://www.tindie.com/products/weird/flock-rc2014-compatible-module-kit/); [Flock PCB and an FDC](https://www.tindie.com/products/weird/flock-rc2014-compatible-module-pcb-and-fdc/), or order from a PCB manufacturer of your choice using provided Gerber or KiCad files
+PCB                |           | Flock PCB - Version 1.0                     | 1        | Buy from my Tindie store: [Complete kit](https://www.tindie.com/products/weird/flock-rc2014-compatible-module-kit/); [Flock PCB and FDC](https://www.tindie.com/products/weird/flock-rc2014-compatible-module-pcb-and-fdc/), or order from a PCB manufacturer of your choice using provided Gerber or KiCad files
 Integrated Circuit | U1        | WD37C65BJM - FDC, CMOS, 44 pin PLCC         | 1        | eBay. Alternative: ST AIC37C65CL
 Integrated Circuit | U2        | DS1302+ - RTC, 8 pin DIP                    | 1        | Mouser [700-DS1302](https://www.mouser.com/ProductDetail/700-DS1302)
 Integrated Circuit | U3        | 74HCT174 - Hex D-type flip-flop with reset, 16 pin DIP | 1 | Mouser [595-CD74HCT174E](https://www.mouser.com/ProductDetail/595-CD74HCT174E)
