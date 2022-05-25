@@ -177,7 +177,7 @@ Connector          | J2        | 2 pin header with friction lock, right angle | 
 Pin Header         | J3, J4    | 2x40 pin header, 2.54 mm pitch, right angle | 1        | Mouser [517-5121TG](https://www.mouser.com/ProductDetail/517-5121TG), or two [649-77315-118-16LF](https://www.mouser.com/ProductDetail/649-77315-118-16LF) and one [649-77317-104-20LF](https://www.mouser.com/ProductDetail/649-77317-104-20LF)
 Capacitor          | C1 - C6   | 0.1 uF, 50V, MLCC, 5 mm pitch               | 6        | Mouser [810-FG28X7R1H104KNT6](https://www.mouser.com/ProductDetail/810-FG28X7R1H104KNT6)
 Capacitor          | C7        | 47 uF, 25V, Organic Polymer, 6.3 mm diameter, 2.5 mm pitch| 1 | Mouser [80-A759EA106M1JAAE60](https://www.mouser.com/ProductDetail/80-A759EA106M1JAAE60)
-Capacitor          | C8        | 0.22 F, 5V, Supercapacitor, X mm diameter, 5 mm pitch| 1 | Mouser [555-DBN-5R5D334T](https://www.mouser.com/ProductDetail/555-DBN-5R5D334T)
+Capacitor          | C8        | 0.22 F, 5V, Supercapacitor, 13.5 mm diameter, 5 mm pitch| 1 | Mouser [555-DBN-5R5D334T](https://www.mouser.com/ProductDetail/555-DBN-5R5D334T)
 Capacitor          | C9        | 47 pF, 50V, MLCC, 5 mm pitch                | 6        | Mouser [810-FG28C0G2A470JNT0](https://www.mouser.com/ProductDetail/810-FG28C0G2A470JNT0)
 Capacitor          | C10       | 15 pF, 50V, MLCC, 5 mm pitch                | 6        | Mouser [810-FG28C0G2A150JNT0](https://www.mouser.com/ProductDetail/810-FG28C0G2A150JNT0)
 Resistor Array     | RN1       | 1 kohm, bussed, 6 pin SIP                   | 1        | Mouser [652-4606X-1LF-1K](https://www.mouser.com/ProductDetail/652-4606X-1LF-1K)
