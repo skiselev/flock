@@ -172,7 +172,7 @@ Integrated Circuit | U5        | 74HCT125 - Quadruple bus buffer gates with 3-st
 Integrated Circuit | U6        | 74HCT32 - Quadruple 2-input positive-OR gates, 14 pin DIP | 1 | Mouser [595-SN74HCT32NE4](https://www.mouser.com/ProductDetail/595-SN74HCT32NE4)
 Quartz Crystal     | Y1        | 16 MHz, series                              | 1        | Mouser [774-ATS160-E](https://www.mouser.com/ProductDetail/774-ATS160-E)
 Quartz Crystal     | Y2        | 32768 Hz, 6 pF                              | 1        | Mouser [815-AB26T32768KHZ6B](https://www.mouser.com/ProductDetail/815-AB26T32768KHZ6B)
-Connector          | J1        | 2x17 pin header, shrouded , 2.54 mm pitch   | 1        | Mouser [517-30334-6002](https://www.mouser.com/ProductDetail/517-30334-6002)
+Connector          | J1        | 2x17 pin header, shrouded , 2.54 mm pitch   | 1        | Mouser [517-30334-6002](https://www.mouser.com/ProductDetail/517-30334-6002); Alternative: Mouser [855-M20-9741746](https://www.mouser.com/ProductDetail/855-M20-9741746) (not shrouded, right angle)
 Connector          | J2        | 2 pin header with friction lock, right angle | 1       | Mouser [571-2-644488-2](https://www.mouser.com/ProductDetail/571-2-644488-2)
 Pin Header         | J3, J4    | 2x40 pin header, 2.54 mm pitch, right angle | 1        | Mouser [517-5121TG](https://www.mouser.com/ProductDetail/517-5121TG), or two [649-77315-118-16LF](https://www.mouser.com/ProductDetail/649-77315-118-16LF) and one [649-77317-104-20LF](https://www.mouser.com/ProductDetail/649-77317-104-20LF)
 Capacitor          | C1 - C6   | 0.1 uF, 50V, MLCC, 5 mm pitch               | 6        | Mouser [810-FG28X7R1H104KNT6](https://www.mouser.com/ProductDetail/810-FG28X7R1H104KNT6)
