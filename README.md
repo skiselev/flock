@@ -25,12 +25,13 @@ Flock is an RC2014*-compatible floppy disk controller (FDC) and real time clock 
 ### Specifications
 * Floppy Disk Controller: Western Digital* WD37C65 or compatible
   * NEC uPD765 compatible with an integrated data separator and floppy interface drivers and buffers
-* Real Time Clock: Maxim Integrated DS1302
 * Supported floppy disk formats:
   * 3.5", 720 KB
   * 3.5", 1.44 MB
   * 5.25", 360 KB (in 5.25", 360 KB drives only)
   * 5.25", 1.2 MB
+* Supports two floppy drives, using IBM PC-like cable with twisted Disk Select / Motor Enable wires between two drives
+* Real Time Clock: Maxim Integrated DS1302
 * Bus: RC2014* compatible
 
 ## Assembly Instructions
@@ -75,6 +76,26 @@ Read/Write: Access real time clock (RTC)
 
 #### J1 - Floppy
 Connect to floppy drive interface connector.
+
+Pin   | Signal Name | Description | Pin   | Signal Name | Description
+----- | ----------- | ------------| ----- | ----------- | -----------
+J1-1  | GND         | Ground      | J1-2  | /DENSEL     | Density Select: 1 = Low density; 0 = High density
+J1-3  | GND         | Ground      | J1-4  | N/C         | Not connected
+J1-5  | GND         | Ground      | J1-6  | N/C         | Not connected
+J1-7  | GND         | Ground      | J1-8  | /INDEX      | Index hole: 0 = At the index hole
+J1-9  | GND         | Ground      | J1-10 | /MEA        | Motor Enable - Drive A
+J1-11 | GND         | Ground      | J1-12 | /DSB        | Drive Select - Drive B
+J1-13 | GND         | Ground      | J1-14 | /DSA        | Drive Select - Drive A
+J1-15 | GND         | Ground      | J1-16 | /MEB        | Motor Enable - Drive B
+J1-17 | GND         | Ground      | J1-18 | /DIR        | Direction Select
+J1-19 | GND         | Ground      | J1-20 | /STEP       | Head Step
+J1-21 | GND         | Ground      | J1-22 | /WDATA      | Write Data
+J1-23 | GND         | Ground      | J1-24 | /WE         | Write Enable: 0 = Write Enabled
+J1-25 | GND         | Ground      | J1-26 | /TRK0       | Track 00: 0 = At the track 0
+J1-27 | GND         | Ground      | J1-28 | /WP         | Write Protect: 0 = Floppy disk is write protected
+J1-29 | GND         | Ground      | J1-30 | /RDATA      | Read Data 
+J1-31 | GND         | Ground      | J1-32 | /HDSEL      | Head Select / Side Select: 1 = Side 0; 0 = Side 1
+J1-33 | GND         | Ground      | J1-34 | /DC         | Disk changed: 1 = Disk changed; 0 = Ready
 
 #### J2 - Floppy 5V
 Connect to floppy 5V power supply connector.
@@ -143,30 +164,31 @@ Flock project on Tindie: [Complete kit](https://www.tindie.com/products/weird/fl
 Component type     | Reference | Description                                 | Quantity | Possible sources and notes 
 ------------------ | --------- | ------------------------------------------- | -------- | --------------------------
 PCB                |           | Flock PCB - Version 1.0                     | 1        | Buy from my Tindie store: [Complete kit](https://www.tindie.com/products/weird/flock-rc2014-compatible-module-kit/); [Flock PCB and an FDC](https://www.tindie.com/products/weird/flock-rc2014-compatible-module-pcb-and-fdc/), or order from a PCB manufacturer of your choice using provided Gerber or KiCad files
-Integrated Circuit | U1        | WD37C65BJM - FDC, CMOS, 44 pin PLCC         | 1        | eBay
-Integrated Circuit | U2        | DS1302+ - RTC, 8 pin DIP                    | 1        | Mouser
-Integrated Circuit | U3        | 74HCT174 - Hex D-type flip-flop with reset, 16 pin DIP | 1 | Mouser
-Integrated Circuit | U4        | 74HCT138 - 3-Line to 8-Line decoders/demultiplexers, 16 pin DIP| 1 | Mouser
-Integrated Circuit | U5        | 74HCT125 - Quadruple bus buffer gates with 3-state outputs, 14 pin DIP | 1 | Mouser
-Integrated Circuit | U6        | 74HCT32 - Quadruple 2-input positive-OR gates, 14 pin DIP | 1 | Mouser
-Quartz Crystal     | Y1        | 16 MHz, series                              | 1        | Mouser
-Quartz Crystal     | Y2        | 32768 Hz, 6 pF                              | 1        | Mouser
-Connector          | J1        | 2x17 pin header, shrouded  , 2.54 mm pitch  | 1        | Mouser
-Connector          | J2        | 2 pin header with friction lock, right angle | 1       | Mouser
+Integrated Circuit | U1        | WD37C65BJM - FDC, CMOS, 44 pin PLCC         | 1        | eBay. Alternative: ST AIC37C65CL
+Integrated Circuit | U2        | DS1302+ - RTC, 8 pin DIP                    | 1        | Mouser [700-DS1302](https://www.mouser.com/ProductDetail/700-DS1302)
+Integrated Circuit | U3        | 74HCT174 - Hex D-type flip-flop with reset, 16 pin DIP | 1 | Mouser [595-CD74HCT174E](https://www.mouser.com/ProductDetail/595-CD74HCT174E)
+Integrated Circuit | U4        | 74HCT138 - 3-Line to 8-Line decoders/demultiplexers, 16 pin DIP| 1 | Mouser [595-SN74HCT138NE4](https://www.mouser.com/ProductDetail/595-SN74HCT138NE4)
+Integrated Circuit | U5        | 74HCT125 - Quadruple bus buffer gates with 3-state outputs, 14 pin DIP | 1 | Mouser [595-SN74HCT125NE4](https://www.mouser.com/ProductDetail/595-SN74HCT125NE4)
+Integrated Circuit | U6        | 74HCT32 - Quadruple 2-input positive-OR gates, 14 pin DIP | 1 | Mouser [595-SN74HCT32NE4](https://www.mouser.com/ProductDetail/595-SN74HCT32NE4)
+Quartz Crystal     | Y1        | 16 MHz, series                              | 1        | Mouser [774-ATS160-E](https://www.mouser.com/ProductDetail/774-ATS160-E)
+Quartz Crystal     | Y2        | 32768 Hz, 6 pF                              | 1        | Mouser [815-AB26T32768KHZ6B](https://www.mouser.com/ProductDetail/815-AB26T32768KHZ6B)
+Connector          | J1        | 2x17 pin header, shrouded , 2.54 mm pitch   | 1        | Mouser [517-30334-6002](https://www.mouser.com/ProductDetail/517-30334-6002)
+Connector          | J2        | 2 pin header with friction lock, right angle | 1       | Mouser [571-2-644488-2](https://www.mouser.com/ProductDetail/571-2-644488-2)
 Pin Header         | J3, J4    | 2x40 pin header, 2.54 mm pitch, right angle | 1        | Mouser [517-5121TG](https://www.mouser.com/ProductDetail/517-5121TG), or two [649-77315-118-16LF](https://www.mouser.com/ProductDetail/649-77315-118-16LF) and one [649-77317-104-20LF](https://www.mouser.com/ProductDetail/649-77317-104-20LF)
-Capacitor          | C1 - C6   | 0.1 uF, 50V, MLCC, 5 mm pitch               | 6        | Mouser
-Capacitor          | C7        | 47 uF, 25V, Electrolytic Polymer, 6.3 mm diameter, 2.5 mm pitch| 1 | Mouser
-Capacitor          | C8        | 0.22 F, 5V, Supercapacitor, X mm diameter, 5 mm pitch| 1 | Mouser
-Capacitor          | C9        | 47 pF, 50V, MLCC, 5 mm pitch                | 6        | Mouser
-Capacitor          | C10       | 15 pF, 50V, MLCC, 5 mm pitch                | 6        | Mouser
-Resistor Array     | RN1       | 1 kohm, bussed, 6 pin SIP                   | 1        | Mouser
-Resistor           | R1,  R2   | 4.7 kohm, 0.25 W, 1% tolerance, axial       | 2        | Mouser
+Capacitor          | C1 - C6   | 0.1 uF, 50V, MLCC, 5 mm pitch               | 6        | Mouser [810-FG28X7R1H104KNT6](https://www.mouser.com/ProductDetail/810-FG28X7R1H104KNT6)
+Capacitor          | C7        | 47 uF, 25V, Organic Polymer, 6.3 mm diameter, 2.5 mm pitch| 1 | Mouser [80-A759EA106M1JAAE60](https://www.mouser.com/ProductDetail/80-A759EA106M1JAAE60)
+Capacitor          | C8        | 0.22 F, 5V, Supercapacitor, X mm diameter, 5 mm pitch| 1 | Mouser [555-DBN-5R5D334T](https://www.mouser.com/ProductDetail/555-DBN-5R5D334T)
+Capacitor          | C9        | 47 pF, 50V, MLCC, 5 mm pitch                | 6        | Mouser [810-FG28C0G2A470JNT0](https://www.mouser.com/ProductDetail/810-FG28C0G2A470JNT0)
+Capacitor          | C10       | 15 pF, 50V, MLCC, 5 mm pitch                | 6        | Mouser [810-FG28C0G2A150JNT0](https://www.mouser.com/ProductDetail/810-FG28C0G2A150JNT0)
+Resistor Array     | RN1       | 1 kohm, bussed, 6 pin SIP                   | 1        | Mouser [652-4606X-1LF-1K](https://www.mouser.com/ProductDetail/652-4606X-1LF-1K)
+Resistor           | R1,  R2   | 4.7 kohm, 0.25 W, 1% tolerance, axial       | 2        | Mouser [603-MFR-25FRF52-4K7](https://www.mouser.com/ProductDetail/603-MFR-25FRF52-4K7)
 IC Socket          | U1        | 44 pin PLCC, through hole                   | 1        | Mouser [517-8444-11B1-RK-TP](https://www.mouser.com/ProductDetail/517-8444-11B1-RK-TP)
-IC Socket          | U2        | 8 pin DIP                                   | 1        | Mouser [517-4808-3000-CP](https://www.mouser.com/ProductDetail/517-4808-3000-CP)
-IC Socket          | U3, U4    | 16 pin DIP                                  | 1        | Mouser [517-4816-3000-CP](https://www.mouser.com/ProductDetail/517-4816-3000-CP)
-IC Socket          | U5, U6    | 14 pin DIP                                  | 1        | Mouser [517-4814-3000-CP](https://www.mouser.com/ProductDetail/517-4814-3000-CP)
-Connector          | J2        | 2 pin connector                             | 1        |
-Connector          | J2        | Floppy disk power connector                 | 1        |
+IC Socket          | U2        | 8 pin DIP                                   | 1        | Mouser [649-DILB8P223TLF](https://www.mouser.com/ProductDetail/649-DILB8P223TLF)
+IC Socket          | U3, U4    | 16 pin DIP                                  | 1        | Mouser [649-DILB16P-223TLF](https://www.mouser.com/ProductDetail/649-DILB16P-223TLF)
+IC Socket          | U5, U6    | 14 pin DIP                                  | 1        | Mouser [649-DILB14P-223TLF](https://www.mouser.com/ProductDetail/649-DILB14P-223TLF)
+Connector          | J2        | 2 pin connector                             | 1        | Mouser [571-3-643813-2](https://www.mouser.com/ProductDetail/571-3-643813-2)
+Connector          | J2        | Floppy disk power connector housing         | 1        | Mouser [571-1718224](https://www.mouser.com/ProductDetail/571-1718224)
+Connector          | J2        | Floppy disk power connector contacts        | 2        | Mouser [571-170262-2-LP](https://www.mouser.com/ProductDetail/571-170262-2-LP), [571-1702622-CT](https://www.mouser.com/ProductDetail/571-1702622-CT) (strip of 100 contacts)
 
 ## Release Notes
 
@@ -181,9 +203,7 @@ Connector          | J2        | Floppy disk power connector                 | 1
   * No known issues
 
 ### Wishlist
-* Consider using JST connector for the battery
-  * Lower profile than TE latchable connector
-  * Ready-made battery holders with JST connectors, such as [Adafruit 4191](https://www.adafruit.com/product/4191) can be used
+* None so far
 
 ## Red Tape
 
