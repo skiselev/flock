@@ -209,7 +209,7 @@ Connector          | J2        | Floppy disk power connector contacts        | 2
 
 ### Licensing
 
-Flock is an open source hardware project certified by [Open Source Hardware Association](https://www.oshwa.org/), certification UID is [US00XXXX](https://certification.oshwa.org/us00XXXX.html). The hardware design itself, including schematic and PCB layout design files are licensed under the strongly-reciprocal variant of [CERN Open Hardware Licence version 2](license-cern_ohl_s_v2.txt). The CPLD VHDL code is licensed under [GNU General Public License v3](license-gpl-3.0.txt). Documentation, including this file, is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](license-cc-by-sa-4.0.txt).
+Flock is an open source hardware project certified by [Open Source Hardware Association](https://www.oshwa.org/), certification UID is [US002115](https://certification.oshwa.org/us002115.html). The hardware design itself, including schematic and PCB layout design files are licensed under the strongly-reciprocal variant of [CERN Open Hardware Licence version 2](license-cern_ohl_s_v2.txt). The CPLD VHDL code is licensed under [GNU General Public License v3](license-gpl-3.0.txt). Documentation, including this file, is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](license-cc-by-sa-4.0.txt).
 
 ![CERN-OHL-2.0-S, GPL-3.0, CC-BY-SA-4.0](images/CERN-OHL-2.0-S_GPL-3.0-only_CC-BY-SA-4.0.svg)
 
