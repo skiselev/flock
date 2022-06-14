@@ -21,7 +21,7 @@ The table below shows the images of the components included in the kit. The up t
 Image                                                                                           | Reference | Description                                            | Quantity
 ----------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------ | --------
 <img src="images/Flock-1.0-Preview.png" alt="PCB - Z80-512K v1.2" height="120">                 | PCB       | Flock PCB - Version 1.0                                | 1
-<img src="images/Component-IC-37C65.jpg" alt="FDC - 37C65" height="120">                        | U1        | WD37C65BJM - FDC, CMOS, 44 pin PLCC                    | 1
+<img src="images/Component-IC-37C65-FDC.jpg" alt="FDC - 37C65" height="120">                    | U1        | WD37C65BJM - FDC, CMOS, 44 pin PLCC                    | 1
 <img src="images/Component-IC-DS1302-RTC.jpg" alt="RTC - DS1302+" height="120">                 | U2        | DS1302+ - RTC, 8 pin DIP                               | 1
 <img src="images/Component-IC-74HCT174-6DFF.jpg" alt="Hex D Flip-Flop - 74HCT174" height="120"> | U3        | 74HCT174 - Hex D-type flip-flop with reset, 16 pin DIP | 1
 <img src="images/Component-IC-74HCT138-Decoder.jpg" alt="3 to 8 Decoder - 74HCT138" height="120"> | U4      | 74HCT138 - 3-Line to 8-Line decoders/demultiplexers, 16 pin DIP        | 1
