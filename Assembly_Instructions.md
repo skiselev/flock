@@ -44,7 +44,7 @@ Image                                                                           
 <img src="images/Component-Socket-DIP8.jpg" alt="IC Socket - DIP8" height="120">                | U2        | Integrated circuit socket, 8 pin DIP                   | 1 (optional)
 <img src="images/Component-Socket-DIP16.jpg" alt="IC Socket - DIP16" height="120">              | U3, U4    | Integrated circuit socket, 16 pin DIP                  | 2 (optional)
 <img src="images/Component-Socket-DIP14.jpg" alt="IC Socket - DIP16" height="120">              | U5, U6    | Integrated circuit socket, 14 pin DIP                  | 2 (optional)
-<img src="images/Floppy_Power_Cable.jpg" alt="Floppy power cable" height="120">                 |           | Floppy disk power cable                                | 1 (Optional)
+<img src="images/Floppy_Power_Cable.jpg" alt="Floppy power cable" height="120">                 |           | Floppy disk power cable                                | 1 (optional)
 
 ## Assembly Steps
 
