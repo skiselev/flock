@@ -32,7 +32,7 @@ Image                                                                           
 <img src="images/Component-Header-2x17-Shrouded.jpg" alt="2x17 Shrouded Pin Header" height="120"> | J1      | Pin header, shrouded, 2x17 pins, 2.54 mm pitch         | 1
 <img src="images/Component-Conn-Latch-2-RA.jpg" alt="Friction Lock Connector" height="120">     | J2        | Pin header with friction lock, 2 pins, right angle     | 1 (optional)
 <img src="images/Component-Header-1x16-RA.jpg" alt="Pin Header 1x16 Right Angle" height="120">  | J3        | Pin header, 1x16 pins, 2.54 mm pitch, right angle      | 2
-<img src="images/Component-Header-RA-2x10.jpg" alt="Pin Header 2x10 Right Angle" height="120">  | J3, J4    | Pin header, 2x10 pins, 2.54 mm pitch, right angle      | 1
+<img src="images/Component-Header-2x10-RA.jpg" alt="Pin Header 2x10 Right Angle" height="120">  | J3, J4    | Pin header, 2x10 pins, 2.54 mm pitch, right angle      | 1
 <img src="images/Component-Cap-0.1uF-MLCC.jpg" alt="Ceramic Capacitors - 0.1uF" height="120">   | C1 - C6   | Capacitor, MLCC, 0.1 uF, 50V, 5 mm pitch               | 6
 <img src="images/Component-Cap-10uF-Polymer.jpg" alt="Organic Polymer Capacitor - 10uF" height="120"> | C7  | Capacitor, Organic Polymer, 10 uF, 63V, 6.3 mm diameter, 2.5 mm pitch | 1
 <img src="images/Component-Supercap-0.33F.jpg" alt="Supercapacitor - 0.33F" height="120">       | C7        | Supercapacitor, 0.22 F, 5.5V, 13.5 mm diameter, 5 mm pitch            | 1
@@ -92,7 +92,7 @@ Install the supplied 10uF and 0.33F capacitors respectively instead
 * Double check that you're placing the integrated circuit in the right socket, check the IC orientation. The index notch on the IC should match the notch on the socket and the drawing on the PCB's silkscreen
 * To insert the 37C65 FDC integrated circuit in PLCC44 package, place it on the top of the socket, double check the orientation of the integrated circuit, and firmly push it down. It should click into the socket
 
-![Assembled board](images/Flock-1.0-Assembled_Board-800px.jpg)
+![Assembled board](images/Flock-Assembled_Board-800px.jpg)
 
 ## Module Installation Instructions
 
