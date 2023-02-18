@@ -118,6 +118,14 @@ The FDU utility included in RomWBW and can be used to test the floppy disk contr
 *	Use the **R** and **W** commands to test reading from and writing to the floppy disk
 Once formatted, the floppy disk can be accessed from CP/M and ZSDOS. RomWBW normally assigns letters _C:_ and _D:_ to the first and the second floppy drives respectively
 
+## Module Usage Instructions – FAT12 Floppy formatting
+The FAT utility included with RomWBW will format floppies to FAT12, rendering them writable on modern computers.
+*	Boot your system to an OS which supports the FAT utility (I.E. ZP/M). 
+*	Observe the disk unit number when booting your system for FD0 (I.E. Disk 2)
+*	Run **FAT FORMAT 2:** and be absolutely sure your disk unit number is correct.  
+*	Wait for the format to complete.
+Once formatted, the disk can be used with a modern computer, such as with a USB to 1.44 Floppy drive. The floppy disk can be accessed only using the FAT utility on RomWBW; Formatting a disk this way is primarily to use it for a bridge to a modern machine. The FAT utility is used to copy files between your CP/M etc. system storage, and the FAT formatted floppy disk.
+
 ## Module Usage Instructions – Real Time Clock
 The RTC utility included in RomWBW is used to set and test the real time clock
 *	Boot your system to CP/M or ZSDOS and run the **RTC** command
