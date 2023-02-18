@@ -76,7 +76,7 @@ making sure that they align with the first (bottom) row of the 2x10 pin header
 * Solder the J1 floppy interface connector. Pay attention to the pin 1 orientation – it should be at the top right corner of the PCB,
 and the polarization key notch in the connector should be located by the top edge of the PCB. Note: the kit includes a straight connector.
 You might choose to replace it with a right angle pin header (not supplied) to simplify the floppy interface cable routing
-and reduce intereference with the next module in the backplane
+and reduce intereference with the next module in the backplane. Note that you may need to remove/extract pin 3 from this connector to accommodate some floppy cables which have this pin position blocked.
 *	Solder the C7 and C8 capacitors. Pay attention to the __polarity__ – the negative side is painted white on the PCB and marked with blue (C7)
 or gray with minus signs (C8) markings. Note that C7 is marked as 47uF on the PCB, and C8 is marked as 0.22F.
 Install the supplied 10uF and 0.33F capacitors respectively instead
